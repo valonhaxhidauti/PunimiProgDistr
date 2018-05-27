@@ -86,7 +86,7 @@ public class PishpirikClient extends JFrame implements ActionListener, Runnable 
 		getContentPane().setBackground(new Color(0, 51, 51));
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		setTitle("Chat Client and Pishpirik");
-		setResizable(false);
+		setResizable(true);
 		getContentPane().setLayout(null);
 
 		jTextAreaMessage.setColumns(20);
@@ -399,11 +399,11 @@ public class PishpirikClient extends JFrame implements ActionListener, Runnable 
 		try {
 			c = (PishpirikChat) Naming.lookup("rmi://" + ipAddress + "/ChatService");
 		}
-		
+
 		  catch (MalformedURLException murle) { System.out.println();
 		  System.out.println("MalformedURLException");
 		  System.out.println(murle); }
-		
+
 		catch (RemoteException re) {
 			System.out.println();
 			System.out.println("RemoteException");
