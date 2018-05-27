@@ -274,7 +274,7 @@ public class PishpirikClient extends JFrame implements ActionListener, Runnable 
 										letratKundershtarit[i].setVisible(false);
 								}
 							}
-
+							
 							kontainer = c.kthe_kontainer();
 							if (!aperfundoi)
 								if (kontainer.size() >= 1) {
