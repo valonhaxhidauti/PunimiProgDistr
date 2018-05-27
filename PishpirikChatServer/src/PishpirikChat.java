@@ -1,6 +1,6 @@
 import java.rmi.*;
 import java.util.*;
- 
+
 public interface PishpirikChat extends Remote
 {
     public void sendPublicMessage(String keyword, String username, String message) throws RemoteException;
@@ -9,12 +9,12 @@ public interface PishpirikChat extends Remote
     public void disconnect(String username) throws RemoteException;
     public void regjistroLojtarin(String emri) throws RemoteException;
     public String ktheMesazhinLojes() throws RemoteException;
-	public int nrlojtareve() throws RemoteException;
-	 public ArrayList kthe_Lojtaret() throws RemoteException;
-	 public String[] letrat_player1() throws RemoteException;
-	 public String[] letrat_player2() throws RemoteException;
+   	public int nrlojtareve() throws RemoteException;
+    public ArrayList kthe_Lojtaret() throws RemoteException;
+	  public String[] letrat_player1() throws RemoteException;
+	  public String[] letrat_player2() throws RemoteException;
 		public ArrayList kthe_kontainer() throws RemoteException;
-		public void shto_kontainer(String a) throws RemoteException;
+  	public void shto_kontainer(String a) throws RemoteException;
 		 public void modifikoKartat1(int i) throws RemoteException;
 		 public void modifikoKartat2(int i) throws RemoteException;
 		 public void rritRadhen() throws RemoteException;
