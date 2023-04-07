@@ -24,5 +24,5 @@ public interface PishpirikChat extends Remote
 		 public void rritPiket(int lojtari,int piket) throws RemoteException;
 		 public int[] kthePiket() throws RemoteException;
 		 public int ktheNrKartave() throws RemoteException;
-		 public void rifillo() throws RemoteException;
+		 public void rifilsslo() throws RemoteException;
 }
